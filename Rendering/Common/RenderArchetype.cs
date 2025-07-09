@@ -8,6 +8,7 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace NSprites
 {
@@ -578,7 +579,8 @@ namespace NSprites
                 {
                     matProps = _materialPropertyBlock,
                     worldBounds = _bounds,
-                    receiveShadows = Material.enableInstancing
+                    receiveShadows = Material.enableInstancing,
+                    shadowCastingMode = ShadowCastingMode.TwoSided // GL patch ici pour activer les ombres.
                 };
                 Graphics.RenderMeshPrimitives(rp,_mesh, 0, _entityCount);
             }
