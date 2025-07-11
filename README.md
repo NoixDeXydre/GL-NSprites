@@ -78,9 +78,9 @@ Varyings UnlitVertex(Attributes attributes, uint instanceID : SV_InstanceID)
 ```
 
 ## How it works
-[`SpriteRenderingSystem`](https://github.com/Antoshidza/NSprites/blob/main/Rendering/Systems/SpriteRenderingSystem.cs) sync registered entity components with [ComputeBuffers](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html) to send data to GPU and then renders entities with [`Graphics.DrawMeshInstancedProcedural`](https://docs.unity3d.com/ScriptReference/Graphics.DrawMeshInstancedProcedural.html). System also controls how ComputeBuffers reallocates if capacity exceeds. Sprites are simple entities with no limits of what components you use.
+[`SpriteRenderingSystem`](https://github.com/NoixDeXydre/GL-NSprites/blob/main/Rendering/Systems/SpriteRenderingSystem.cs) sync registered entity components with [ComputeBuffers](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html) to send data to GPU and then renders entities with [`Graphics.DrawMeshInstancedProcedural`](https://docs.unity3d.com/ScriptReference/Graphics.DrawMeshInstancedProcedural.html). System also controls how ComputeBuffers reallocates if capacity exceeds. Sprites are simple entities with no limits of what components you use.
 
-## Check [Foundation](https://github.com/Antoshidza/NSprites-Foundation)
+## Check [Foundation](https://github.com/NoixDeXydre/GL-NSprites-Foundation)
 NSprites doesn't provide anything except rendering and managing data for it. Though you can implement anything you want on top of it. Also I want to share some foundation project where you can find examples and maybe even useful tools to work with this package. Foundation provides such things as sorting / culling / animation / 2D transforms / basic data authoring and registration.
 
 ## Check sample project - [Age of Sprites](https://github.com/Antoshidza/Age-of-Sprites)
@@ -120,10 +120,10 @@ this two.
 
 ### [Install via Package Manager](https://docs.unity3d.com/2021.3/Documentation/Manual/upm-ui-giturl.html)
 * Window -> Package Manager -> + button -> Add package from git url
-* Paste `https://github.com/Antoshidza/NSprites.git`
+* Paste `https://github.com/NoixDeXydre/GL-NSprites.git`
 ### Install via git submodule
 * `cd` to your project's `/Packages` folder
-* git submodule https://github.com/Antoshidza/NSprites.git
+* git submodule https://github.com/NoixDeXydre/GL-NSprites.git
 
 ## Support :+1: Contribute :computer: Contact :speech_balloon:
 I wish this project will be helpful for any ECS early adopters! So feel free to send bug reports / pull requests, start discussions / critique, those all are **highly** appreciated!
